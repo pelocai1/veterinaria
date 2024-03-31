@@ -1,6 +1,8 @@
 
 package com.proyectoMio.veterinaria.model;
 
+import java.time.LocalDate;
+
 public class Factura {
     private int idFactura;
     private float importe;
