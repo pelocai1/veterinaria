@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es" xmlns:th="http://www.thymeLeaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clínica Veterinaria</title>
+    <!-- Bootstrap CSS -->
+    <link th:href="@{bootstrap/css/bootstrap.min.css}" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- Estilos personalizados -->
+    <link href="css/styles.css" rel="stylesheet">
+</head>
+<body>
+
+<!-- Encabezado -->
+<div th:include="WEB/headerfooter.html::header"></div>
+
+<!-- Main Content -->
+<div class="container mt-5">
+  <div class="row">
+    <!-- Opciones del menú en cuadrícula -->
+    <div class="col-md-4 mb-4">
+      <a href="clientes.html" class="card bg-primary text-white">
+        <div class="card-body text-center">
+          <h5 class="card-title">Clientes</h5>
+        </div>
+      </a>
+    </div>
+    <div class="col-md-4 mb-4">
+      <a href="#" class="card bg-success text-white">
+        <div class="card-body text-center">
+          <h5 class="card-title">Animales</h5>
+        </div>
+      </a>
+    </div>
+    <div class="col-md-4 mb-4">
+      <a href="#" class="card bg-danger text-white">
+        <div class="card-body text-center">
+          <h5 class="card-title">Empleados</h5>
+        </div>
+      </a>
+    </div>
+    <div class="col-md-4 mb-4">
+      <a href="#" class="card bg-warning text-white">
+        <div class="card-body text-center">
+          <h5 class="card-title">Actuaciones</h5>
+        </div>
+      </a>
+    </div>
+    <div class="col-md-4 mb-4">
+      <a href="#" class="card bg-info text-white">
+        <div class="card-body text-center">
+          <h5 class="card-title">Facturas</h5>
+        </div>
+      </a>
+    </div>
+  </div>
+</div>
+<!-- Footer -->
+<div th:include="WEB/headerfooter.html::footer"></div>
+<!-- Bootstrap JS and jQuery -->
+<script src="bootstrap/js/jquery-3.5.1.min.js"></script>
+<script src="bootstrap/js/bootstrap.min.js"></script>
+<script>
+  // Agregar cabecera
+  $(function() {
+    $("#header").load("header.html");
+  });
+
+  // Agregar footer
+  $(function() {
+    $("#footer").load("footer.html");
+  });
+</script>
+</body>
+</html>
